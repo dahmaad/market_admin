@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "67424318260",
+    "project_id": "test-feed-adb40",
+    "storage_bucket": "test-feed-adb40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67424318260:android:18d06f55160c6a99a56b61",
+        "android_client_info": {
+          "package_name": "com.example.aaaaaaaaa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCjx9qFAan8VWaTnN3Z2cxMiFz4i96E7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
