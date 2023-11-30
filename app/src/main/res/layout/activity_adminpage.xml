@@ -6,15 +6,134 @@
     android:background="@drawable/template"
     android:layout_height="match_parent"
     tools:context=".adminpage"
-    android:padding="20dp">
+    android:padding="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/headerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00FFFFFF"
+            android:gravity="center_horizontal"
+            android:text="@string/admin_space"
+            android:textColor="@color/white"
+            android:textSize="14pt" />
+
+        <ImageView
+            android:id="@+id/quit"
+            android:src="@drawable/exit_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
 
 
-    <ImageView
-        android:id="@+id/quit"
-        android:src="@drawable/exit_24"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        />
+    <RelativeLayout
+        android:id="@+id/element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/headerSection">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#4DFFFFFF"
+            android:hint="insert name..."
+            android:textSize="10pt"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/cat"
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#4DFFFFFF"
+            android:hint="insert category..."
+            android:textSize="10pt"
+            android:layout_below="@+id/name"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/prx"
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#4DFFFFFF"
+            android:hint="insert price..."
+            android:textSize="10pt"
+            android:layout_below="@+id/cat"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#4DFFFFFF"
+            android:hint="insert image..."
+            android:textSize="10pt"
+            android:layout_below="@+id/prx"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/dx"
+            android:layout_width="match_parent"
+            android:layout_height="50pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#4DFFFFFF"
+            android:hint="descriptions..."
+            android:textSize="10pt"
+            android:layout_below="@+id/img"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dx"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Add"
+            android:textSize="25dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/prx"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="30dp"
+            android:background="#66FFFFFF"
+            android:src="@drawable/baseline_attach_file_24" />
+
+    </RelativeLayout>
+
 </RelativeLayout>
-

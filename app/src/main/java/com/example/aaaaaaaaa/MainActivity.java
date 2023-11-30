@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     MaterialButton B;
     FirebaseAuth mAuth;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,11 +46,9 @@ public class MainActivity extends AppCompatActivity {
                                     // If sign in fails, display a message to the user.
                                     Toast.makeText(getApplicationContext(), "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
-
                                 }
                             }
                         });
-
             }
         });
     }
